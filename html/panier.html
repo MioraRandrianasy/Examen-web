@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'Achat</title>
+    <link rel="stylesheet" href="../assets/css/panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>    
+    <!-- la navigation de la page -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html" target="_blank">Accueil</a>
+            <div class="header-right">
+                <button>SE CONNECTER</button>
+                <a href="../html/panier.html" target="_blank">Panier</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- gestion du panier -->
+    <div class="container">
+        <h1>Panier d'Achat</h1>
+        <div class="panier">
+            <div class="panier-item">
+                <span class="item-name">Produit 1</span>
+                <span class="item-prix">10€</span>
+                <div class="section">
+                    <input type="number" class="item-quantity" value="1" min="1">
+                    <button class="delete">Supprimer</button>
+                </div>
+            </div>
+            <div class="panier-item">
+                <span class="item-name">Produit 2</span>
+                <span class="item-prix">20€</span>
+                <div class="section">
+                    <input type="number" class="item-quantity" value="1" min="1">
+                    <button class="delete">Supprimer</button>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            Total: <span id="total-prix">30€</span>
+        </div>
+    </div>
+    <script src="../assets/js/panier.js"></script>
+</body>
+</html>

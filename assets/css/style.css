@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* header style */
+.header-container{
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(#3db1ff, #3be2ab);
+    padding: 0 1em;
+    align-items: center;
+}
+.header-right{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.header-container a{
+    text-decoration: none;
+    color: black;
+}
+.header-right button {
+    background:black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header-right button:hover {
+    background: white;
+    color: black;
+}
+
+/* content style */
+h1{
+    display: flex;
+    justify-content: center;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+/* produits */
+.produits-block{
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.produit-item{
+    width: 18em;
+    padding:1em;
+    background: #ddd;
+
+}
+.produit-item .produit-img{
+    height: 20em;
+}
+.produit-item .produit-img img {
+    height: 100%;
+}
+.item-descri{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-produit{
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+}
+.btn-produit i{
+    font-size: 30px;
+    color: black;
+}
+.btn-produit i:hover{
+    color: brown;
+}
+.btn-produit a{
+    color: none;
+}
+.description-produit{
+    margin: 1em 0;
+}
+.titre-produit{
+    margin: .5em 0;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.btn-produit a{
+    display: flex;
+    padding:.5em;
+    border-radius: 10px;
+}
+/* footer */
+.search{
+    display: flex;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}

@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-image {
+    width: 50%;
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.product-name {
+    font-size: 1.5em;
+}
+
+.product-description {
+    font-family: 'Courier New', Courier, monospace;
+    color: #999;
+}
+
+.product-price {
+    font-size: 1.3em;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.product-sku {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.product-attributes {
+    display: flex;
+    align-items: space-between;
+    margin-bottom: 20px;
+}
+.product-attributes input{
+    width: 4em;
+}
+.size-selector, .quantity-selector {
+    margin-bottom: 10px;
+}
+
+.ajout-panier {
+    background:linear-gradient(#3db1ff, #3be2ab);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ajout-panier:hover {
+    background: black;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .product-image {
+        max-width: 100%;
+    }
+
+    .product-attributes {
+        width: 100%;
+        align-items: center;
+    }
+
+    .size-selector, .quantity-selector {
+        width: 100%;
+    }
+
+    .ajout-panier{
+        width: 100%;
+        text-align: center;
+    }
+    #product-details{
+        width: 80%;
+    }
+    .container{
+        width: 100%;
+    }
+}

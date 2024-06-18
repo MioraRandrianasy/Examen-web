@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Produit</title>
+    <link rel="stylesheet" href="../assets/css/details.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Détails du Produit</h2>
+        <div id="product-details">
+            <img src="../assets/img/T-shirt noir.jfif" alt="T-shirt noir" class="product-image">
+            <div class="product-name">T-shirt noir</div>
+            <div class="product-description">Un t-shirt noir basique.</div>
+            <div class="product-price">19.99€</div>
+            <div class="product-sku">SKU: TSHIRT-007</div>
+            <div class="product-attributes">
+                <label for="size">Tailles:</label>
+                <select id="size" class="size-selector">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="quantity">Quantité:</label>
+                <input type="number" id="quantity" class="quantity-selector" value="1" min="1" max="80">
+            </div>
+            <button class="ajout-panier">Ajouter au panier</button>
+        </div>
+    </div>
+
+    <script src="../assets/js/details.js" ></script>
+</body>
+</html>

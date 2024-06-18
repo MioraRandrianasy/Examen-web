@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ma boutique en ligne</title>
+</head>
+<body>
+    <!-- la navigation de la page -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" target="_blank">Accueil</a>
+            <div class="header-right">
+                <button>SE CONNECTER</button>
+                <a href="./html/panier.html"target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="search">
+        <input type="text" placeholder="Recherchez un produit">
+        <button class="lens"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <!-- le corps de la page contenant les articles en vente -->
+    <div class="content-container">
+        <h1>Nos articles en vente</h1>
+        <div class="produits-block">
+            <!--On ajoute ici le html géneré dans JS  -->
+        </div>
+        <div class="pagination">
+            <button>Prev</button>
+            <button>Next</button>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
